@@ -42,7 +42,7 @@ The New Jim Crow - Michelle Alexander
 The Truths We Hold - Kamala Harris
 My Grandmother's Hands - Resmaa Menakem
 
-Finally, prinb the books attribute of my_library to make sure your books have been added!
+Finally, print the books attribute of my_library to make sure your books have been added!
 '''
 print('\nPart 2\n')
 
