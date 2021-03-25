@@ -81,7 +81,7 @@ Now that the collaborators all have access to the repository, they can 'clone' i
 Remember, the **first** thing you should do when collaborating is to check that you are not missing out on any updates from the remote by running `git fetch` or `git pull` first. This will make sure that you don't get off track with the remote repo.
 
 1. Then, make a new file named `merge_prac.md` and add a sentence to it.
-3. Both partners should add and commit this file. One partner should push this file.
+2. Both partners should add and commit this file. One partner should push this file.
 
 
 ## Step 5: Creating a merge conflict
