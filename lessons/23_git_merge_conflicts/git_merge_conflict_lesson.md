@@ -50,7 +50,9 @@ Now, every time we sit down in our computer to code we will first check to see i
 
 In order to check whether there are changes on the remote version of the code, we then need to use `git status` to show us a comparison between our version of the world and what exists on the remote.
 
-Typically, you will either already be in sync with the remote branch or you will need to "pull" the changes.
+Typically, you will either already be in sync with the remote branch or you will need to *merge* the changes. 
+* Actually, `git pull` is really a combination of `git fetch` and then `git merge`. 
+* So, after you've run `git fetch`, you can run `git merge` (this is equivalent to running `git pull`, just separated into 2 steps)
 
 Here is an example of what your system might look like after fetching:
 
@@ -74,11 +76,11 @@ Sometimes, you will try to pull the code but will get an error message that you 
 
 <img src="images/git-pull_local-changes.png" width="500">
 
-In this case, you can either do a `git commit` if you are ready to accept this bite of work you've done or you can temporarily `git stash` your changes so that they are protected when you pull in the new code and then `git pop stash` and continue where you left off.
+In this case, you can either do a `git commit` if you are ready to accept this bite of work you've done or you can temporarily `git stash` your changes so that they are protected when you pull in the new code and then `git stash pop` and continue where you left off.
 
 <img src="images/git-stash.png" width="500">
 
-However, sometimes you and your collaborator will step on each others' toes and will edit the same part of the code at the same time. Then, when you do your `git fetch`, you might instead see a message like this:
+However, sometimes you and your collaborator will step on each others' toes and will edit the same part of the code at the same time. Then, when you do your `git pull`, you might instead see a message like this:
 
 <img src="images/git-merge-conflict.png" width="500">
 
