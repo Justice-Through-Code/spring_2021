@@ -71,21 +71,7 @@ After making these changes, your file might look something like this:
 
 You can see another example of creating a merge conflict [here.](http://swcarpentry.github.io/git-novice/09-conflict/index.html)
 
-## Advanced options
-### Git stash
-Sometimes you have local changes that you are not yet ready to formalize into a commit, but you still need to pull changes from the remote location. In this case, it can be helpful to `stash` your changes.
 
-This essentially temporarily hides away your local changes so that they remain unaffected when you pull changes from the remote.
+## Step 6: Running the unit test
+In the test_books.py file, there is a unit test that will succeed only after you have successfully added both changes and resolved your merge conflicts. Try running it and see what happens!
 
-To do this, you will first need to `git stash` your changes, `git pull`, and then to recover your local edits `git pop stash`.
-
-<img src="images/git-stash.png" width="500">
-
-Be careful while using the stash though — never leave changes unpopped for too long!
-
-### Pulling with rebase
-If you want Git to try to avoid merge conflicts when you are pulling in remote changes, you can add the option `--rebase`.
-
-This option essentially uses the syntax we would use when working with multiple branches. In brief, pulling is like merging changes into your existing workflow whereas rebasing crushes your work with something new.
-
-[Here](https://stackoverflow.com/questions/36148602/git-pull-vs-git-rebase/36148752#:~:text=git%20pull%20fetches%20the%20latest,local%20copy%20of%20the%20branch.&text=You%20can%20pull%20using%20rebase,merged%20with%20the%20remote%20changes.) is a helpful Stack Overflow post on this topic.
