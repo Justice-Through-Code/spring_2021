@@ -89,7 +89,7 @@ Remember, the **first** thing you should do when collaborating is to check that 
 
 2. Let's retrieve your partner's changes by now running `git pull`.
 
-## Step 5: Resolving merge conflicts
+## Step 6: Resolving merge conflicts
 1. In this case, you both made changes to the same file. Now we need to resolve where your workflows have diverged before we can continue.
 
 If you've been reading the Git messages closely, you may have noticed that it is offering you a way forward:
