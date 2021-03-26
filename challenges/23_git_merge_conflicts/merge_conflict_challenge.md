@@ -45,7 +45,10 @@ def count_books(self):
 2. In the book_class.py file, add the `remove_title` method:
 ```
 def remove_title(self, title):
-  self.books.remove(title)
+		# loop throubh books, remove the book if the title matches title passed in
+		for book in self.books:
+			if book['title'] == title:
+				self.books.remove(book)
 ```
 3. Add and commit this work
 
